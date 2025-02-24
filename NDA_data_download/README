@@ -2,7 +2,7 @@ STEPS TO DOWNLOAD NDA DATA DIRECTLY TO HPC
 
 Create the data package in NDA portal in which you have ID
 
-Example: ![Example](https://github.com/swathihg/Genetic_Prediction/blob/daa62d320cf3a8e4102f12c11bba063508856b85/NDA_data_download/example.png)
+Example: ![image alt](https://github.com/swathihg/Genetic_Prediction/blob/daa62d320cf3a8e4102f12c11bba063508856b85/NDA_data_download/example.png)
 
 In your scratch HPC
 1.	pip install nda-tools
