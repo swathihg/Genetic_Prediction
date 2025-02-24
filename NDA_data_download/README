@@ -1,0 +1,56 @@
+STEPS TO DOWNLOAD NDA DATA DIRECTLY TO HPC
+
+Create the data package in NDA portal in which you have ID
+
+Example: ![image info](example.png)
+ 
+
+In your scratch HPC
+1.	pip install nda-tools
+
+2.	if necessary, pip install nda-tools --user
+
+3.	It may ask for username - which can be found in NDA portal account
+
+4.	Incase if you need to use different username change name here: /home/user/.NDATools/settings.cfg
+
+File looks like this
+
+                [Endpoints]
+                user = https://nda.nih.gov/api/user
+                package = https://nda.nih.gov/api/package
+                validation = https://nda.nih.gov/api/validation
+                submission_package = https://nda.nih.gov/api/submission-package
+                submission = https://nda.nih.gov/api/submission
+                validationtool = https://nda.nih.gov/api/validationtool/v2
+                datadictionary =https://nda.nih.gov/api/datadictionary/datastructure
+                1.	package_creation = https://nda.nih.gov/api/packaging-ws
+                2.	collection = https://nda.nih.gov/api/collection
+                
+                [User]
+                username = change name here
+                access_key = 
+                secret_key = 
+                session_token =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.	In your scratch run batch job – sbatch download.sh
+
+6.	If there are any failure in download. Check your output file for csv link/ command which has a list of failed downloads
+
+7.	Run a new sbatch with the failed download csv file – sbatch failed_download.sh
+
