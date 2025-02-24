@@ -34,20 +34,6 @@ File looks like this
                 session_token =
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 5.	In your scratch run batch job – sbatch download.sh
 
 6.	If there are any failure in download. Check your output file for csv link/ command which has a list of failed downloads
