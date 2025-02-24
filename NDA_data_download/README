@@ -2,7 +2,7 @@ STEPS TO DOWNLOAD NDA DATA DIRECTLY TO HPC
 
 Create the data package in NDA portal in which you have ID
 
-Example: ![HTML logo](/example.png)
+Example: (/example.png)
 
 In your scratch HPC
 1.	pip install nda-tools
